@@ -1,28 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view></router-view>
   </div>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+// 1、引入组件
+// import axios from 'axios'
+// import jsonp from 'jsonp'
+// import storage from './storage'
 export default {
   name: 'App',
+// 2、注册组件
   components: {
-    HelloWorld
+
+  },
+  data(){
+    return{
+
+    }
+
+  },
+  mounted () {
+      // storage.setItem('a','1');
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import "./assets/scss/reset.scss";
 </style>
